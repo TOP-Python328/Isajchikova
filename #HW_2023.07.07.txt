@@ -1,0 +1,60 @@
+
+
+==========1==========
+name = input('Введите имя : ')
+surname = input('Введите фамилию : ')
+year = int(input('Введите   год рождения'))
+age = 2023-year
+print(surname,' ',name,', ', age)
+
+==========2==========
+number=int(input('Введите число : '))
+
+next_number = number +1
+early_number = number-1
+print(f"Следующее за числом {str(number)} число : {str(next_number)}")
+print(f"Для числа {str(number)} предыдущее число : {str(early_number)}")
+
+
+==========3==========
+
+minutes = int(input('Введите колличество минут'))
+hours = minutes//60
+minutes_ = minutes%60
+print(f"{str(minutes)} мин - это {str(hours)} час {str(minutes_)} " )
+
+
+
+==========4==========
+
+number = int(input('Введите трехзначное число : '))
+number_1 = number//100
+number_2 = (number - number_1*100)//10
+number_3 = number%10
+summa = number_1 + number_2 + number_3
+product = number_1 * number_2 * number_3
+# вывод переменных  использовала  для самоконтроля  
+# print(number_1)
+# print(number_2)
+# print(number_3)
+
+print(f"Сумма цифр = {str(summa)}")
+print(f"Произведение цифр = {str(product)}")
+
+==========5==========
+mille = float(input('Введите колличество миль :'))
+tenths = float(input('Введите колличество десятых : '))
+mille_tenths = mille + tenths / 10
+
+km = round(mille_tenths * 1.61)
+print(f"{str(mille_tenths)} миль = {str(km)} км ( округление до круглого функцией round )"  )
+
+km_0 = f'{(mille_tenths * 1.61):.2f}'
+print(f"{str(mille_tenths)} миль = {str(km_0)} км ( округление до сотых)"  )
+
+km_0 = f'{(mille_tenths * 1.61):.1f}'
+print(f"{str(mille_tenths)} миль = {str(km_0)} км ( округление до десятых)"  )
+
+km_0 = f'{(mille_tenths * 1.61):.0f}'
+print(f"{str(mille_tenths)} миль = {str(km_0)} км ( округление до круглого f строкой )"  )
+
